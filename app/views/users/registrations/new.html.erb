@@ -1,0 +1,72 @@
+<div class="body">
+
+  <content class="content-main">
+    <div class="main_section_body">
+      <div class="container">
+        <div class="form_body">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-8">
+            <center>
+              <h1>Register Now</h1>
+            </center>
+            <hr>
+            <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+
+            <div class="form-group">
+              <label for="exampleInputPassword1">User name</label>
+              <input type="name" class="form-control" id="exampleInputPassword1" placeholder="">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1"><%= f.label :email %></label>
+              <%= f.email_field :email, class: 'form-control', autofocus: true, autocomplete: "email" %>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1"><%= f.label :password %></label>
+              <% if @minimum_password_length %>
+                <em>(<%= @minimum_password_length %>
+                  characters minimum)</em>
+              <% end %><br/>
+              <%= f.password_field :password, class: 'form-control', autocomplete: "new-password" %>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1"><%= f.label :password_confirmation %></label>
+              <%= f.password_field :password_confirmation, class: 'form-control', autocomplete: "new-password" %>
+            </div>
+            <div class="form-group">
+              <label style="display: block;" for="exampleInputEmail1">Phone Number</label>
+              <form style="width: 100%;">
+                <input style="width: 100%;" id="phone" name="phone" type="tel">
+              </form>
+            </div>
+            <!-- <div class="form-group">
+              <label for="exampleFormControlTextarea1">Address</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+            </div> -->
+            <!-- <div class="form-group">
+              <label for="exampleInputPassword1">Type of Company</label>
+              <input type="text" height="170" class="form-control" id="exampleInputPassword1" placeholder="e.g Pharmaceuticals, Oil & Gas e.t.c">
+            </div> -->
+            <!-- <div class="form-group" style="width: 100%;">
+              <div class="input-group mb-3" style="width: 100%;">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="inputGroupSelect01">Single Select</label>
+                </div>
+                <select class="custom-select form-control" id="inputGroupSelect01">
+                  <option selected="selected">Select Option</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            </div> -->
+            <%= f.submit "Sign up", class: 'btn submit_btn' %>
+          <% end %>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</content>
+
+</div>

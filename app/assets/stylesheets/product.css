@@ -1,0 +1,410 @@
+.content-main {
+	width: 100%;
+	float: left;
+	padding: 20px 0;
+}
+
+.sidebar-from {
+	width: 100%;
+    float: left;
+    background: #fafafa;
+    padding: 25px 30px;
+}
+
+.panel-group .panel {
+	background: #fafafa;
+}
+
+.btn-brand {
+  background: none;
+  border: none;
+  display: block;
+  position: relative;
+  width: 100%;
+  text-align: left;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 0 0 10px 0;
+  font-family: sans-serif;
+    color: #000;
+    margin: 0 0 5px;
+    font-weight: 700;
+  
+}
+.btn-brand.collapsed {
+  border-bottom: 2px solid #d2e2ea;
+  margin-bottom: 22px;
+}
+.btn-brand:focus{
+  outline: none;
+}
+.btn-brand:after {
+  content: "\f107";
+  font: normal normal normal 14px/1 FontAwesome;
+  color: grey;  
+  right: 0;       /* adjust as needed */
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 24px;
+  color: #000;
+}
+.btn-brand.collapsed:after {
+  content: "\f105";
+}
+
+.sidebar-from .service_area ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #aeb9c2;
+}
+.sidebar-from .service_area .service_area :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #aeb9c2;
+   opacity:  1;
+}
+.sidebar-from .service_area ::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #aeb9c2;
+   opacity:  1;
+}
+.sidebar-from .service_area :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #aeb9c2;
+}
+.sidebar-from .service_area ::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #aeb9c2;
+}
+
+.sidebar-from .service_area ::placeholder { /* Most modern browsers support this now. */
+   color:    #aeb9c2;
+}
+
+.clear_btn_block {
+  width: 50%;
+  float: left;
+}
+
+.clear_btn {
+  background: none;
+  border: none;
+  color: #000;
+  font-size: 16px;
+  font-family: sans-serif;
+.  float: right;
+}
+
+
+
+.sidebar-from {
+  width: 100%;
+  float: left;
+}
+
+.sidebar-from label {
+  color: #000;
+  font-size: 16px;
+  font-family: "source_sans_probold";
+  line-height: 19px;
+  display: block;
+  margin: 0 0 15px 0;
+}
+
+
+.sidebar-from ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #aeb9c2;
+}
+.sidebar-from :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #aeb9c2;
+   opacity:  1;
+}
+.sidebar-from ::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #aeb9c2;
+   opacity:  1;
+}
+.sidebar-from :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #aeb9c2;
+}
+.sidebar-from ::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #aeb9c2;
+}
+
+.sidebar-from ::placeholder { /* Most modern browsers support this now. */
+   color:    #aeb9c2;
+}
+
+.service_area {
+  width: 100%;
+  float: left;
+  border-bottom: 2px solid #d2e2ea;
+}
+
+.categories_btn_block {
+  width: 100%;
+  float: left;
+  border-bottom: 2px solid #d2e2ea;
+}
+
+.categories_btn {
+  width: 100%;
+  font-size: 16px;
+  font-family: "source_sans_probold";
+  background: url(../images/fa_down_icon.png) no-repeat 192px 21px;
+  line-height: 19px;
+  color: #000;
+  padding: 16px 137px 11px 0;
+  border: none;
+}
+
+.category_dropdown {
+  min-width: 210px;
+}
+
+.category_checkbox_btn_block {
+  width: 99%;
+  float: left;
+  padding: 16px 0 11px 0;
+  border-top: 2px solid #d2e2ea;
+  border-bottom: 2px solid #d2e2ea;
+  margin-bottom: 22px;
+}
+
+.scroll_check-box {
+  width: 100%;
+  max-height: 280px;
+  min-height: 70px;
+  float: left;
+  overflow: auto;
+}
+
+.category_checkbox_btn {
+  width: 100%;
+  text-align: left;  
+  background: none;
+  border: none;
+}
+
+.sidebar-from .category_checkbox_btn label {
+  position: relative;
+  color: #000;
+  font-size: 14px;
+  font-family: "sans-serif";
+  padding: 0 0 0 35px;
+  line-height: 17px;
+  cursor: pointer;
+}
+
+.sidebar-from .checkbox_dropdown label {
+  position: relative;
+  color: #000;
+  font-size: 14px;
+  font-family: sans-serif;
+  line-height: 17px;
+  margin: 0 0 12px 0;
+  cursor: pointer;
+  padding: 0 0 0 35px;
+}
+
+
+.checkbox_dropdown {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 0;
+}
+
+.checkbox_dropdown li {
+  float: left;
+  width: 100%;
+  margin: 0 0 5px;
+}
+
+.checkbox_dropdown li a {
+  text-decoration: none;
+}
+/* Hide the browser's default checkbox */
+.category_checkbox_btn_block input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+/* When the checkbox is checked, add a blue background */
+.category_checkbox_btn_block input:checked ~ .checkmark {
+  border: 2px solid #000;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.category_checkbox_btn_block input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.category_checkbox_btn_block .checkmark:after {
+  left: 2px;
+  top: 2px;
+  width: 12px;
+  height: 12px;
+  background: #000;
+  border-radius: 100%;
+}
+
+/* width */
+.scroll_check-box::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+.scroll_check-box::-webkit-scrollbar-track {
+  box-shadow: none;
+  background: #ffffff;
+  border: 1px solid #000;
+  border-radius: 100px;
+}
+ 
+/* Handle */
+.scroll_check-box::-webkit-scrollbar-thumb {
+  background: #000; 
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+.scroll_check-box::-webkit-scrollbar-thumb:hover {
+}
+
+/*left side css end*/
+
+.product_main {
+	width: 100%;
+	float: left;
+	padding: 10px;
+	background: #fafafa;
+	margin: 0 0 10px;
+}
+
+.product_img {
+	width: 100%;
+	height: 100%;
+}
+
+.product_img img {
+	width: 100%;
+	height: 100%;
+
+}
+
+.product_info {
+	width: 100%;
+	float: left;
+	margin: 0 0 20px;
+}
+
+.product_info p {
+	font-size:  16px;
+  line-height: 19px;
+  margin: 0 0 20px;
+}
+
+.product_views h3, .product_info h3 {
+	font-size:  16px;
+  line-height: 19px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.product_views h3 span, .product_info h3 span{
+	font-size:  12px;
+  line-height: 15px;
+  margin: 0;
+  color: #999;
+  font-weight: 500;
+}
+
+.more-products {
+	width: 100%;
+	float: left;
+}
+
+.more-products p {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333;
+  margin: 0 0 5px;
+}
+
+.more_product_img {
+	width: 20%;
+	height: 100%;
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+.more_product_img img {
+	width: 100%;
+	height: 50px;
+}
+
+.reviews {
+	width: 100%;
+	float: left;
+	margin: 10px 0 0;
+	position: relative;
+}
+
+.reviews p {
+	margin: 0;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333;
+}
+
+.five_stars {
+	padding: 5px;
+	background: #dbffdb;
+	color: #32BEB4;
+}
+
+.show_on_hover {
+	padding: 15px;
+	background: #fff;
+	display: none;
+	position: absolute;
+	top: 25px;
+  left: -50px;
+}
+
+.reviews:hover .show_on_hover {
+	display: block;
+}
+
+.five_stars_on_hover {
+	font-size: 18px;
+	color: #FF6600;
+}
+
+.show_on_hover p {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333;
+  margin: 0 0 5px;
+	margin: 0 0 10px;
+}

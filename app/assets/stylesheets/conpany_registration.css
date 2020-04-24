@@ -1,0 +1,123 @@
+.comp_regis_banner {
+	width: 100%;
+	float: left;
+	padding: 170px 0;
+  position: relative;
+  z-index: 1;
+  background: #000;
+}
+
+.comp_regis_banner_img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #fafafa;
+  background: url(back2.jpg) center center;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.2;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.comp_regis_banner h1 {
+  font-size: 56px;
+  font-family: sans-serif;
+  line-height: 61.6px;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  font-weight: 900;
+}
+
+/*content css start*/
+
+.main_section_body {
+  width: 100%;
+  float: left;
+}
+
+.form_body {
+  width: 100%;
+  float: left;
+  padding: 50px 0;
+}
+
+.form_body h1 {
+  margin: 0 0 20px 0;
+}
+
+.mrg_b {
+  margin: 0 0 35px !important;
+}
+
+.submit_btn {
+  width: 170px;
+  height: 40px;
+  border: none;
+  border-radius: 3px;
+  background: #35BDB3 !important;
+  color: #fff !important;
+  margin: 0 0 10px;
+  line-height: 0;
+}
+
+.main_section_body .submit_btn:hover, .main_section_body .submit_btn:focus {
+  background: #2faca3;
+  color: #fff;
+}
+
+/* signature field */
+/**,
+:before,
+:after {
+  box-sizing: border-box;
+}
+html {
+  font: 18px 'Helvetica Neue', sans-serif;
+}
+body {
+  text-align: center;
+}
+.signature-component {
+  text-align: left;
+  display: inline-block;
+  max-width: 100%;
+  h1 {
+    margin-bottom: 0;
+  }
+  h2 {
+    margin: 0;
+    font-size: 100%;
+  }
+  button {
+    padding: 1em;
+    background: transparent;
+    box-shadow: 2px 2px 4px #777;
+    margin-top: .5em;
+    border: 1px solid #777;
+    font-size: 1rem;
+    &.toggle{
+      background: rgba(red, .2);
+    }
+  }
+  canvas {
+    display: block;
+    position: relative;
+    border: 1px solid;
+  }
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}*
